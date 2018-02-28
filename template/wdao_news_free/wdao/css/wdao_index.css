@@ -1,0 +1,147 @@
+ /* -----------------------------------------------------------------
+
+
+
+The Whole CSS written by Elecom.
+
+(C) Elecom Inc.
+
+Annoucement here,Copyright
+
+Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-04-09 20:00:06
+
+
+
+---------------------------------------------------------------------------------------*/
+
+
+
+a { color: #222222}
+
+a:hover { text-decoration: none}
+.wdao_wp{width:1170px;margin:0 auto}
+.wdao_l{width:800px;float:left}
+.wdao_r{width:340px;float:right;padding-bottom: 20px}
+.wdao_content{position:relative;overflow:hidden;display:block;margin-bottom:30px;background:#fff;box-shadow:0 2px 5px 0 hsla(0,0%,57%,.1);-webkit-transition:all .6s ease;transition:all .6s ease}
+.wdao_content:hover{box-shadow:0 8px 25px 0 hsla(0,0%,57%,.21)}
+.frame, .frame-tab { background:none !important}
+
+
+
+
+
+/* 幻灯片/Banner */
+	.focusBox { position: relative; width:800px; height:380px; overflow: hidden; }
+	.focusBox .pic{ position:relative; z-index:0; }
+	.focusBox .pic img { width:800px; height:380px; display: block; }
+	.focusBox .hd { width:100%; position: absolute; bottom: 10px; text-align: center; font-size:0; z-index:1; }
+	.focusBox .hd li{margin: 0 5px; background: url(../img/dot.png) no-repeat 0 -16px; height: 16px; overflow: hidden; width: 16px; cursor: pointer;
+		display:inline-block; *display:inline; zoom:1;  _background: url(../img/dot8.png) no-repeat 0 -16px;
+	}
+	.focusBox .hd .on{ background-position:0 0; }
+
+	.focusBox .prev,
+	.focusBox .next { width: 60px; height: 90px; margin: -60px 0 0; display: none; background: url(../img/ad_ctr.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; filter:alpha(opacity=20);opacity:0.2;  }
+	.focusBox .prev { left: 0; }
+	.focusBox .next { background-position: 0 -90px; right: 0; }
+	.focusBox .prev:hover,
+	.focusBox .next:hover { filter:alpha(opacity=50) !important;opacity:0.5 !important;  }
+	/* 推荐文章 */
+	
+	.wdao_tuijian{    float: left;    width: 254px;    margin: 0 19px 19px 0;    position: relative;    height: 195px;    overflow: hidden;}
+	.wdao_tuijian .wdao_tuipic {
+    position: absolute;
+    width: 100%;
+}
+    .wdao_tuijian .wdao_tuiinfo{
+    position: relative;
+    width: 257px;
+    height: 195px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+    .wdao_tuijian .wdao_tuiinfo .t-h1 {
+    font-size: 16px;
+    margin: 0 20px;
+    top: 100px;
+    z-index: 10;
+    position: absolute;
+    word-break: inherit;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+
+}
+
+/* 最新文章 */
+
+.mod-b{padding:30px 0;height:165px;border-bottom:1px solid #f0f0f0;width:800px}
+.mod-b:last-child{border:none}
+.mob-ctt{position:relative;float:right;margin:0 30px;width:530px;margin-top:-162px}
+.mob-ctt h3{margin-top:-5px}
+.mob-ctt h3 a{font-size:18px}
+.mob-ctt h2{margin-top:-5px;font-size:24px}
+.mob-ctt h2 a{font-size:18px}
+.mob-sub{font-size:14px;color:#999;line-height:24px}
+.recommend-sub{color:#333}
+.recommend-sub .quot{position:relative;top:5px;font-size:24px;font-weight:700;font-style:normal}
+.mob-author{margin:15px 0}
+.mob-author .author-face{position:absolute;width:25px;height:25px}
+.mob-author .author-face img{width:100%;overflow:hidden;border-radius:25px}
+.mob-author .author-name,.mob-author .time,.mob-author em{color:#bbb;line-height:24px;margin-left:7px;font-style:normal}
+.mob-author .author-name{margin-left:36px}
+.mob-author .author-name.no-face{margin-left:0}
+.mod-b-push .mob-author .author-name{margin-left:36px}
+.mod-b-push .mob-author .author-name.no-face{margin-left:0}
+.mob-author .time{margin-left:20px}
+.mob-author em{margin-left:5px}
+.mod-thumb{width:220px;height:165px;overflow:hidden;background:#e7e7e7}
+.mod-b.dp-box-active{border:none}
+.dp-box-warp{border-bottom:1px solid #f0f0f0;padding-bottom:30px}
+.dp-box-warp .dp-box{margin-top:0}
+.mob-author .qr-moments-box{display:inline-block}
+.mob-author .qr-moments{position:absolute;width:130px;height:130px;box-shadow:0 0 6px rgba(14,22,30,.3);margin:-165px 0 0 -32px;z-index:100;display:none}
+.mob-author .qr-moments:before{content:'';display:block;position:absolute;width:0;height:0;border:8px solid transparent;border-top:10px solid rgba(0,0,0,.1);top:130px;left:56px}
+.mob-author .qr-moments:after{content:'';display:block;position:absolute;width:0;height:0;border:8px solid transparent;border-top:10px solid #fff;top:129px;left:56px}
+.mod-b-push{height:435px}
+.mod-b-push .mod-thumb{width:500px;height:375px}
+.mod-b-push .mob-ctt{width:250px;margin-top:-376px}
+.mod-b-push .mob-ctt h3 a{font-size:28px;line-height:1.5}
+/* 右侧热文推荐 */
+.box-moder {
+    background-color: #fafafa;
+}
+.wdao_r_hot .wdao_tuijian{width:320px}
+.rumorlist{padding:10px 30px 0 37px;margin:0;border-bottom:0}
+.rumorlist li{position:relative;border-left:2px solid #f0f0f0}
+.rumorlist li:last-child{border-left:0}
+.rumorlist li:last-child p{padding-bottom:10px}
+.rumorlist li .icon-clock{padding-top:6px;padding-bottom:6px;background-color:#fafafa;position:absolute;left:-9px;width:16px;height:16px;background:url(../img/clock.jpg) no-repeat}
+.rumorlist li img{display:block;width:auto}
+.rumorlist li p{padding-left:16px}
+.rumorlist .rumor-time{color:#999;line-height:16px;font-size:14px}
+.rumorlist li p{padding-left:16px}
+.rumorlist .rumor-detail{padding-top:9px;padding-bottom:30px;font-size:16px;color:#333;line-height:28px}
+.rumor-more a{display:block;padding:0 30px 25px 0;text-align:right;font-size:16px;color:#bbb;line-height:18px;border-bottom:0}
+.rumor-more a:hover{color:#3ca5f6}
+
+
+#main_sidebar .btn_sign { float: left; width: 280px; height: 50px; line-height: 50px; margin: 0 0 0 30px; overflow: hidden; background: #3ca5f6}
+#main_sidebar .btn_sign a { color: #FFFFFF; text-align: center}
+#main_sidebar .btn_sign .icon_sign { margin-top: 11px; margin-left: 66px}
+#main_sidebar .btn_sign_left p { display: inline-block; height: 50px; line-height: 50px}
+#main_sidebar .btn_sign_left a { display: block; width: 280px; height: 50px}
+#main_sidebar .btn_sign_left p { width: 95px; font-size: 18px}
+
+.moder-project-list ul li{padding:30px;border-bottom:1px solid #f0f0f0}
+.moder-project-list ul li:last-child{border-bottom:0}
+.promote-box .mod-thumb{width:78px;height:44px;position:absolute}
+.promote-box .project-content{margin-left:98px;font-size:16px;margin-top:-2px}
+.promote-box .project-content a:hover{color:#3ca5f6}
+.c2,.c3{color:#bbb}
+.promote-box .point{color:#ccc;font-size:18px;margin:0 5px}
+.mod-thumb img{width:100%}
+/* end */
+
+
+

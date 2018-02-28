@@ -1,0 +1,52 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,div,input{margin:0;padding:0;border:0;}
+header, section, footer, aside, nav, article, figure, dialog, menu {display: block;}
+body{font: 14px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;background: #FFFFFF;}
+li{list-style-type:none;}
+a img{border: 0}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+h1,h2,h3,h4{font-family: "微软雅黑","黑体";}
+.clearfix:after {
+	visibility: hidden; 
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clear{clear: both;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+.cl{font-size: 14px;font-family:"微软雅黑";}
+a,p,input,div{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+            line-height: 25px;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            line-height: 25px;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           line-height: 25px;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+           line-height: 25px;
+        }
+
+html{height:100%;}
+body{margin 0;min-height: 100%;background-color: #F4F4F4;}
+.HDB_main{margin: 0;overflow: hidden;}
+.HDB_main form{width: 90%;margin: 0px auto;margin-top: 30px;}
+.HDB_main form input{display: block;width: 100%;height: 50px;margin-bottom: 18px; border: 1px solid #EEE; border-radius: 5px;font-size: 18px;-webkit-appearance: none;}
+.HDB_main form input[type=text],.HDB_main form input[type=password]{text-indent: 10px;}
+.HDB_main form input[type=submit]{color: #fff;background-color: #FF9700; margin-top: 20%;}
+.code_box{width: 100%;margin: 0;position: relative;}
+.register_code{height: 36px;color: #4FD2C3;background-color: #fff;border: 1px solid #4FD2C3;border-radius: 6px;font-size: 15px;position: absolute;right: 2px;top: 8px;}
+.HDB_title{font-size: 18px; color: #707070;margin-bottom: 5px;}
+.HDB_register{text-align: center;color: #BEBEBE;}
+.HDB_register a{text-decoration:underline;color: #4FD2C3;}

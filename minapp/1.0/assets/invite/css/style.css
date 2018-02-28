@@ -1,0 +1,156 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,div,input{margin:0;padding:0;border:0;}
+header, section, footer, aside, nav, article, figure, dialog, menu {display: block;}
+body{font: 14px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;background: #FFFFFF;}
+li{list-style-type:none;}
+a img{border: 0}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+h1,h2,h3,h4{font-family: "微软雅黑","黑体";}
+.clearfix:after {
+        visibility: hidden; 
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+.clear{clear: both;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+.cl{font-size: 14px;font-family:"微软雅黑";}
+a,p,input,div{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+	::-webkit-input-placeholder {/* WebKit browsers */
+            line-height: 25px;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            line-height: 25px;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           line-height: 25px;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+           line-height: 25px;
+        }
+/*分享下载*/
+.sd_box{width: 100%;overflow: hidden;background-color: #F8F8F8;}
+.sd_top{width: 100%;overflow: hidden;background-color: #FFF7E3; position: relative;text-align: center;border-bottom: 1px solid #ECECEC;padding-top: 16px;}
+.top_out{width: 95%;}
+.top_in{width: 16%;position: absolute;left: 43.3%;border-radius: 100%;}
+.top_in img{ width:100%;border-radius: 100%; }
+.top_tle{font-size: 15px;color: #A39671;}
+.top_code{color: #6E5F51;display: block;font-size: 22px;display: block;width: 75%;background-color: #FFF;border: 1px dashed #D6D0C0;margin: 0px auto;margin-top: 15px;padding: 4px 0px 2px 0px;border-radius: 3px;font-weight: bold;}
+.sd_top button{width: 75%; height: 40px;border:0;background-color: #FFCA3A;color: #7B322A;font-size: 16px;border-radius: 4px;margin-top: 25px;margin-bottom: 25px;border-bottom: 5px solid #F3B608;padding: 2px 0px 1px 0px;}
+.top_in_name{position: absolute;width: 100%;text-align: center;left: 0;text-indent: 10px;color: #FFF;font-size: 15px;}
+.top_code_tishi{font-size: 15px;color: #A39671;margin-top: 5px;text-align: center;}
+
+
+.sd_btm{width: 100%;overflow: hidden;background-color: #FFF;border-top: 1px solid #ECECEC;margin-top: 8px;}
+.btm_tle{color: #ADADAD;border-bottom: 1px solid #ECECEC; font-size: 13px;padding:  8px 10px;}
+.btm_list{width: 100%;overflow: hidden; margin-bottom: 8px;}
+.btm_list li{overflow: hidden; padding: 10px;border-bottom: 1px solid #ECECEC;}
+.btm_list li img{width: 31px;display: inline-block;float: left;border-radius: 100%;}
+.list_user{display: inline-block;overflow: hidden;margin-left: 8px;}
+.user_name{font-size: 13px;color: #ADADAD;line-height: 20px;} .user_d_time{font-size: 11px;color: #ADADAD;line-height: 10px;}
+.list_gold{display: inline-block;float: right; font-size: 13px;color: #F79325;margin-right: 5px;margin-top: 8px;}
+.list_text{padding-left: 39px;font-size: 16px;color: #333;line-height: 16px;margin-top: 5px;}
+
+/*发送给好友*/
+.cover{position: fixed;width: 100%;height: 100%;top: 0;left: 0;background-color: rgba(0,0,0,0.6);z-index: 888;}
+.in_box{position: absolute; width: 85%;background-color: #F8F8F8;z-index: 999;top: 20%;left: 7.5%;overflow: hidden; border-radius: 6px;}
+.in_top{ padding: 0px 20px 17px 15px; overflow: hidden;}
+.in_tle{color: #333333;font-size: 15px;margin-top: 15px; margin-bottom: 8px;} .in_mid{overflow: hidden;}
+.app_logo{display: inline-block;width: 26%; float: left;overflow: hidden;}
+.in_msg{display: inline-block; float: right; color: #ADADAD; width: 71%;font-size: 13px;line-height: 20px;}
+.app_name{color: #7D7D7D;font-size: 14px;margin-top: 2px;}  
+.in_ipt{width: 85%;height: 32px; display: inline-block; margin-top: 8px;border: 1px solid #CFCFCF;-webkit-appearance: none; border-radius: 4px; float: left;font-size: 15px; color: #333; text-indent: 10px;}
+.in_face{width: 10%;display: inline-block;float: right; margin-top: 16px;}
+
+.in_btm{overflow: hidden;border-top: 1px solid #ECECEC;}
+.in_btm span{width: 49.5%;text-align: center;display: inline-block;padding: 10px 0px 9px 0px;font-size: 15px;}
+
+.in_close{float: left;border-right: 1px solid #ECECEC;color: #ADADAD;}
+.in_send{color: #78BD50;}
+
+/*邀请好友*/
+.ite_box{width: 100%;overflow: hidden;background-color: #F8F8F8;}
+.ite_top{width: 100%;overflow: hidden; }
+	/*已登录*/
+	.top_is_login{overflow: hidden;border-bottom: 1px solid #ECECEC;background-color: #FFF; }
+	.is_tle{font-size: 10px;text-align: center;color: #C68B14; background-color: #FFFAEF;border-bottom: 1px solid #DFD1B3;padding: 9px 0px;}
+	.is_mc{font-size: 14px;text-align: center;color: #7D7D7D;margin-top: 30px;}
+	.is_code{font-size: 34px;text-align: center; color: #F79325;font-weight: bold; margin-bottom: 30px;line-height: 34px;}
+	/*未登录*/	
+	.top_no_login{overflow: hidden;padding: 0px 10px;}
+	.no_login_tel{background-color: #FFF;padding: 12px;overflow: hidden;margin-top: 12px;}
+	.no_login_tel img{display: inline-block;float: left;width: 23%;}
+	.no_login_tel span{display: inline-block;float: right;width: 70%; font-size: 11px;color: #7D7D7D;}
+	.top_no_login button{display: block; width: 85%;height: 30px;background-color: #78BD50;color: #FFF;border: 0;border-radius: 4px;margin: 0px auto;font-size: 13px;margin-top: 20px;margin-bottom: 8px;}
+
+.ite_fst{width: 100%;overflow: hidden; border-bottom: 1px solid #ECECEC;border-top: 1px solid #ECECEC;background-color: #FFF;margin-top: 8px;}
+.fst_top{width: 100%;overflow: hidden; border-bottom: 1px solid #ECECEC; padding: 7px 0px 6px 0px;}
+.fst_top img{width: 15px;display: inline-block;float: left;margin-left: 10px;margin-right: 9px;margin-top: 3px;}
+.fst_top span{font-size: 15px;color: #333;margin-left: 12px;}
+.fst_list ul{padding: 13px 8px;overflow: hidden;}
+.fst_list ul li{width: 20%;float: left;text-align: center; font-size: 12px;color: #ADADAD;}
+.fst_list ul li img{width: 61%;}
+
+	/*已验证*/
+	.ite_is_verify{width: 100%;overflow: hidden;}
+	.is_vry{width: 90%; margin: 0px auto; font-size: 13px;color: #F79325; padding: 6px 3px;border: 1px solid #F79325;border-radius: 4px;margin-top: 14px;margin-bottom: 13px; text-align: center; display: none;}
+	.is_vry_ul{margin: 0px 10px;overflow: hidden;background-color: #F8F8F8; padding: 10px 16px 8px 10px; font-size: 14px;color: #7D7D7D;margin-bottom:14px; }
+	.is_vry_ul li{margin-bottom: 2px;}
+
+	/*未验证*/	
+	.code-box{margin: 12px auto;  width:263px;       position: relative;  border: 1px solid #DFDFDF;border-radius: 3px;overflow: hidden;}  
+	.code-box input[type="tel"]{  width: 100%;  height: 32px;  border-radius: 0px;color: transparent;  position: absolute;  top: 0;  left: 0;  border: none;  font-size: 16px;  opacity: 0;  z-index: 1;  letter-spacing: 24px;  }  
+	.fake-box{overflow: hidden;}
+	.fake-box input{  border-radius: 0px;width: 32px;  height: 32px;  border: none;  border-right: 1px solid #DFDFDF;  text-align: center;  font-size: 16px; display: inline-block;float: left; }  
+	.fake-box input:nth-last-child(1){  border:none; } 
+
+.ite_btm{overflow: hidden; background-color: #F8F8F8;padding: 0px 12px;margin-bottom: 50px;}
+.btm_text{color: #333333;margin-top: 10px;margin-bottom: 6px;font-size: 14px;}
+.ite_btm ul{color: #7D7D7D;font-size: 14px;margin-bottom: 20px;}
+.ite_btm ul li{margin-bottom: 4px;}
+
+
+/*邀请弹窗*/
+	.e_cover{position: fixed;width: 100%;height: 100%;top: 0;left: 0;background-color: rgba(0,0,0,0.6);z-index: 888;display: none;}
+	/*邀请成功*/
+	.ite_success{position: absolute; width: 75%;background-color: #F8F8F8;z-index: 999;top: 20%;left: 12.5%;overflow: hidden; border-radius: 4px;display: none;}
+	.ite_success img{ width: 66%;display: block;margin: 18px auto;}
+	.ite_success p{text-align: center;color: #F79325;}
+	.ite_success button{width: 100%;height: 36px;background-color: #F9BF4A; border: 0;margin-top: 15px; color: #FFF; font-size: 13px; }
+	/*邀请失败*/
+	.ite_error{position: absolute; width: 72%;background-color: #F8F8F8;z-index: 999;top: 20%;left: 14%;overflow: hidden; border-radius: 4px;}
+	.error_tel{color: #78BD50;text-align: center;font-size: 14px;padding: 11px 0px 6px 0px;border-bottom: 1px solid #ECECEC;}
+	.error_topt{font-size: 13px;color: #333333;text-align: center;margin-top: 35px;}
+	.error_btmt{font-size: 13px;color: #333333;text-align: center;margin-bottom: 25px;}
+	.ite_error button{width: 100%;height: 36px;background-color: #78BD50; border: 0;margin-top: 15px; color: #FFF; font-size: 13px;}
+	.error_self{font-size: 13px;color: #333333;text-align: center;margin-top: 35px;margin-bottom: 24px;}
+	.error_one{display: none;}
+	.error_two{display: none;}
+	.error_three{display: none;}
+	.error_four{display: none;}
+
+/*.er-code{position: absolute; width: 72%;background-color: #F8F8F8;z-index: 999;top: 20%;left: 14%;overflow: hidden;}
+  .er-code img{width: 100%;margin: 0;}*/
+    /*二维码*/
+    .er-code{position: absolute; width: 80%;z-index: 999;top: 15%;left: 10%;overflow: hidden;display: none;}
+    .er-bg{width: 100%;}
+    .er-text{width: 100%; font-size: 12px;color: #7D7D7D;text-align: center;position: absolute;bottom: 8.6%;left: 0;}
+    .code{width: 66%;position: absolute;left: 17%;top: 11%;}
+
+
+
+    /*新增跳转按钮*/
+    .fst-in-url{position: fixed;left: 0;bottom: 0; overflow: hidden;border-top: 1px solid #EEE;padding: 6px 0px;background-color: #FFF;width: 100%;}
+    .fst-in-url li{float: left; text-align: center;padding-top: 10px;padding-bottom: 4px;}
+    .fst-in-url li img{width: 22px;}
+    .fst-in-url li span{font-size: 14px;  margin-left: 5px;color: #333; vertical-align: top;}
+    .fst-in-left{width: 49%;border-right: 1px solid #ECECEC;}
+    .fst-in-right{width: 50%;}

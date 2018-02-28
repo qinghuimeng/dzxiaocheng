@@ -1,0 +1,143 @@
+<!--{template common/header}-->
+<!--{eval}-->
+include 'template/sinzr_albx/php/portal_index.php';
+$messagelength='200';
+$num=12;
+$begin=($_G['page']-1)*$num;
+$sinzrlist=array();
+require_once libfile('function/post');
+
+    $rs=DB::query("SELECT * FROM ".DB::table('forum_thread')." WHERE `fid` not in ($fids) and displayorder>=0 ORDER BY `lastpost` DESC LIMIT $begin , $num");
+while ($rw=DB::fetch($rs)) {
+        $rw['message']=messagecutstr($rw['message'],$messagelength,'');
+        $rw['message']=dhtmlspecialchars($rw['message']);
+        $sinzrlist[]=$rw;
+}
+$allnum=DB::result_first("select count(*) from ".DB::table("forum_thread")." where fid not in ($fids);"); 
+$pagenav=multi($allnum,$num,$_G['page'],"portal.php?order=lastpost#threadsbody");
+<!--{/eval}-->
+<style id="diy_style" type="text/css"></style>
+<div class="wp t10 cl index_banner">
+	<div class="z">
+	    <!--[diy=index_banner]--><div id="index_banner" class="area"></div><!--[/diy]-->
+	</div>
+	<div class="y">
+	    <!--[diy=index_rm]--><div id="index_rm" class="area"></div><!--[/diy]-->
+	</div>
+</div>
+<div class="wp t20 sinzr_portal_index cl">
+    <div class="sinzr_index_z sinzr_portal_index_z">
+        <p class="tit"><span>最新发布</span></p>
+        <ul id="sinzr_portal_list">
+            <!--{loop $sinzrlist $thread}-->
+                <!--{eval
+                    $biaoid = substr($thread[tid], -1);
+                    $cover = DB::result(DB::query("SELECT count(*) FROM ".DB::table('forum_attachment_'.$biaoid.'')." WHERE tid = '$thread[tid]' and isimage = '1'"));
+                    
+                    
+                    $pic = DB::fetch_first("SELECT aid,tid FROM ".DB::table('forum_attachment_'.$biaoid.'')." WHERE tid='$thread[tid]' AND isimage!=0 ");
+                    $pics = DB::fetch_all("SELECT aid,tid FROM ".DB::table('forum_attachment_'.$biaoid.'')." WHERE tid='$thread[tid]' AND isimage!=0 ORDER BY `dateline` ASC");
+                    $thread['pics']=count($querys);
+                    
+    		        $summary = DB::result(DB::query("SELECT message FROM ".DB::table('forum_post')." WHERE tid = '$thread[tid]' AND first = '1' "));
+    		        $summary_echo = preg_replace ("/\[[a-z][^\]]*\]|\[\/[a-z]+\]/i",'',preg_replace("/\[attach\]\d+\[\/attach\]/i",'',$summary));
+    		        $fidname = DB::result(DB::query("SELECT name FROM ".DB::table('forum_forum')." WHERE fid = '$thread[fid]'"));
+                    $sinzr_post = DB::result(DB::query("SELECT count(*) FROM ".DB::table('forum_attachment_'.$biaoid.'')." WHERE tid = '$thread[tid]' and isimage = '1'"));
+                    $i=1
+                }-->
+                <li>
+                    <p class="header ha">
+                        <a href="forum.php?mod=forumdisplay&fid=$thread[fid]" target="_blank" class="forum_name">$fidname<i class="ico"></i></a>
+                        <a href="forum.php?mod=viewthread&tid=$thread[tid]" target="_blank" class="tit" title="$thread[subject]">$thread[subject]</a>
+                        <!--{if $cover > 0}--><small><i class="iconfont icon-font29"></i><em>$cover</em></small><!--{/if}-->
+    				</p>
+    				<p class="date">发布时间 <!--{echo date("Y-m-d H:i",$thread[lastpost])}--></p>
+                    <!--{if $cover == 0}-->
+                        <p class="txt"><!--{echo cutstr($summary_echo,324)}--></p>
+                    <!--{elseif $cover >= 1 && $cover <4}-->
+                        <div class="txt_div cl">
+                            <a href="forum.php?mod=viewthread&tid=$thread[tid]" target="_blank" class="img"><img src="{eval echo(getforumimg($pic[aid],0,194,145))}" width="194" height="145"/></a>
+                            <p class="txt"><!--{echo cutstr($summary_echo,324)}--></p>
+                        </div>
+                    <!--{elseif $cover > 3 && $cover <8}-->
+                        <p class="img cl">
+                            <!--{loop $pics $pic}-->
+                                <!--{if $i<5}-->
+                                    <a href="forum.php?mod=viewthread&tid=$thread[tid]" target="_blank"><img src="{eval echo(getforumimg($pic[aid],0,200,135))}" width="200" height="135" class="immediate-img"></a>
+                                  <!--{/if}-->
+                                  <!--{eval $i++}-->
+                            <!--{/loop}-->
+                        </p>
+                        <p class="txt"><!--{echo cutstr($summary_echo,324)}--></p>
+                    <!--{elseif $cover > 7}-->
+                        <p class="img cl">
+                            <!--{loop $pics $pic}-->
+                                <!--{if $i<9}-->
+                                    <a href="forum.php?mod=viewthread&tid=$thread[tid]" target="_blank"><img src="{eval echo(getforumimg($pic[aid],0,200,135))}" width="200" height="135" class="immediate-img"></a>
+                                  <!--{/if}-->
+                                  <!--{eval $i++}-->
+                            <!--{/loop}-->
+                        </p>
+                        <p class="txt"><!--{echo cutstr($summary_echo,324)}--></p>
+                    <!--{/if}-->
+                    <div class="tags ha">
+                    	<!--{eval}-->
+                			$post = DB::fetch_first("SELECT tags FROM ".DB::table(forum_post)." WHERE first=1 AND tid='$thread[tid]' ");
+                			$tagarray_all = $posttag_array = array();
+                			$tagarray_all = explode("\t", $post['tags']);
+                			if($tagarray_all) {
+                				foreach($tagarray_all as $var) {
+                					if($var) {
+                						$tag = explode(',', $var);
+                						$posttag_array[] = $tag;
+                						$tagnames[] = $tag[1];
+                					}
+                				}
+                			}
+                			$post['tags'] = $posttag_array;
+                        <!--{/eval}-->
+                        <p class="views_zs">
+                            <span>阅读量($thread[views])</span>
+                            <span>评论数($thread[replies])</span>
+                            <a href="javascript:;" class="recommend"><i class="iconfont icon-zan"></i>赞($thread[recommend_add])</a>
+                            <spam class="tag_s">
+                                <em>标签：</em>
+                    			<!--{loop $post[tags] $var}-->
+                        			<a href="misc.php?mod=tag&id={$var[0]}&type=thread" target="_blank">{$var[1]}</a>
+                    			<!--{/loop}-->
+                			</spam>
+                		</p>
+    				</div>
+                </li>
+            <!--{/loop}-->
+            <li class="sinzr_pags cl">$pagenav</li>
+        </ul>
+    </div>
+    <div class="sinzr_index_y y">
+        <!--{subtemplate common/so}-->
+        <!--[diy=sinzr_banner]--><div id="sinzr_banner" class="area"></div><!--[/diy]-->
+        <div class="tags t10">
+            <p class="sinzr_txtgs"><span>热门标签</span></p>
+            <ul class="cl">
+                <!--{eval $tags = DB::fetch_all("SELECT * FROM ".DB::table('common_tag')." WHERE tagid >=1 ORDER BY tagid DESC limit 28");}-->
+                <!--{eval $iss = 0;}-->
+                <!--{if $iss <= $issnumber}-->
+        	        <!--{loop $tags $tag}-->
+        	            <li>
+        	                <a href="misc.php?mod=tag&id=$tags[$iss][tagid]">$tags[$iss][tagname]</a>
+        	            </li>
+        	            <!--{eval $iss++;}-->
+        	        <!--{/loop}-->
+                <!--{/if}-->
+            </ul>
+        </div>
+        <div class="sinzr_url ha2 t20">
+            <p class="sinzr_txtgs"><span>友情链接</span></p>
+            <!--[diy=index_url]--><div id="index_url" class="area"></div><!--[/diy]-->
+        </div>
+    </div>
+</div>
+<script src="misc.php?mod=diyhelp&action=get&type=index&diy=yes&r={echo random(4)}" type="text/javascript"></script>
+<script type="text/javascript" src="$_G['style']['styleimgdir']/js/jquery-1.js"></script>
+<script type="text/javascript" src="$_G['style']['styleimgdir']/js/banner.js"></script>
+<!--{template common/footer}-->

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Style]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2018-01-27 00:18]]></item>
+	<item id="From"><![CDATA[Discuz! Board (https://www.sinzr.net/)]]></item>
+	<item id="Data">
+		<item id="styleid"><![CDATA[2]]></item>
+		<item id="name"><![CDATA[sinzr_albx]]></item>
+		<item id="available"><![CDATA[1]]></item>
+		<item id="templateid"><![CDATA[2]]></item>
+		<item id="extstyle"><![CDATA[|]]></item>
+		<item id="tplname"><![CDATA[sinzr_albx]]></item>
+		<item id="directory"><![CDATA[./template/sinzr_albx]]></item>
+		<item id="copyright"><![CDATA[小学生设计www.sinzr.net/thread-42-1-1.html]]></item>
+		<item id="style">
+			<item id=""><![CDATA[]]></item>
+			<item id="available"><![CDATA[]]></item>
+			<item id="boardimg"><![CDATA[logo.png]]></item>
+			<item id="imgdir"><![CDATA[]]></item>
+			<item id="styleimgdir"><![CDATA[template/sinzr_albx/deancss]]></item>
+			<item id="stypeid"><![CDATA[1]]></item>
+			<item id="headerbgcolor"><![CDATA[#FFFFFF]]></item>
+			<item id="bgcolor"><![CDATA[#f1f1f1]]></item>
+			<item id="sidebgcolor"><![CDATA[#f1f1f1]]></item>
+			<item id="titlebgcolor"><![CDATA[#f1f1f1]]></item>
+			<item id="headerborder"><![CDATA[1px]]></item>
+			<item id="headertext"><![CDATA[#444]]></item>
+			<item id="footertext"><![CDATA[#666]]></item>
+			<item id="font"><![CDATA[Tahoma,'Microsoft Yahei','Simsun']]></item>
+			<item id="fontsize"><![CDATA[12px/1.5]]></item>
+			<item id="threadtitlefont"><![CDATA[Tahoma,'Microsoft Yahei','Simsun']]></item>
+			<item id="threadtitlefontsize"><![CDATA[14px]]></item>
+			<item id="smfont"><![CDATA[Arial]]></item>
+			<item id="smfontsize"><![CDATA[0.83em]]></item>
+			<item id="tabletext"><![CDATA[#555]]></item>
+			<item id="midtext"><![CDATA[#666]]></item>
+			<item id="lighttext"><![CDATA[#999]]></item>
+			<item id="link"><![CDATA[#333]]></item>
+			<item id="highlightlink"><![CDATA[#369]]></item>
+			<item id="lightlink"><![CDATA[#fff]]></item>
+			<item id="wrapbg"><![CDATA[#fff]]></item>
+			<item id="wrapbordercolor"><![CDATA[#ccc]]></item>
+			<item id="msgfontsize"><![CDATA[14px]]></item>
+			<item id="contentwidth"><![CDATA[630px]]></item>
+			<item id="contentseparate"><![CDATA[#C2D5E3]]></item>
+			<item id="menubgcolor"><![CDATA[]]></item>
+			<item id="menutext"><![CDATA[#777]]></item>
+			<item id="menuhoverbgcolor"><![CDATA[#ff5e52]]></item>
+			<item id="menuhovertext"><![CDATA[#fff]]></item>
+			<item id="inputborder"><![CDATA[#E0E0E0]]></item>
+			<item id="inputborderdarkcolor"><![CDATA[#848484]]></item>
+			<item id="inputbg"><![CDATA[#fff]]></item>
+			<item id="dropmenuborder"><![CDATA[#FEFEFE]]></item>
+			<item id="dropmenubgcolor"><![CDATA[#FFF]]></item>
+			<item id="floatbgcolor"><![CDATA[#fff]]></item>
+			<item id="floatmaskbgcolor"><![CDATA[#000]]></item>
+			<item id="commonborder"><![CDATA[#e5e5e5]]></item>
+			<item id="commonbg"><![CDATA[#fff]]></item>
+			<item id="specialborder"><![CDATA[#e5e5e5]]></item>
+			<item id="specialbg"><![CDATA[#fff]]></item>
+			<item id="noticetext"><![CDATA[]]></item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+	</item>
+</root>

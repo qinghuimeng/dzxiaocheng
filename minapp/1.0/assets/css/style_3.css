@@ -1,0 +1,140 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,div,input{margin:0;padding:0;border:0;}
+header, section, footer, aside, nav, article, figure, dialog, menu {display: block;}
+body{font: 14px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;background: #FFFFFF;}
+li{list-style-type:none;}
+a img{border: 0}
+a:hover{text-decoration: none;}
+h1,h2,h3,h4{font-family: "微软雅黑","黑体";}
+html,body{width: 100%;margin: 0;padding: 0;}
+
+@font-face
+{
+  font-family: FontA;
+  src: url('../font/PingFangRegularA.ttf');
+}
+@font-face
+{
+  font-family: FontB;
+  src: url('../font/Regular.ttf');
+}
+body{font-family:FontA,FontB;}
+
+.gather_box{width: 100%; margin:0;overflow: hidden;background-color: #F8F8F8;}
+.content{width: 65%;margin: 0;overflow: hidden;background-color: #FFF;}
+.discuss{width: 100%;margin-top: 5px;overflow: hidden;background-color: #FFF;border-top: 0.8px solid #ECECEC;padding: 0;}
+.head_content{border: 0 !important;}
+.head_discuss{border: 0 !important;margin-top: 0 !important;}
+.head_title{ font-size: 24px; font-weight:bold;line-height: 33px;margin-bottom: 8px; word-wrap:break-word; }
+.head_box{width: 90%;margin: 20px auto;}
+.head_from{font-size: 16px; color: #B4B4B4;}
+.head_type{color: #78BD50; font-size: 16px;}
+.content_joke{width: 90%;margin: 0px auto; font-size: 16px;letter-spacing:1px;margin-top: 20px;}
+.content_img{width: 90%;margin: 0px auto;display: block;margin-top: 20px;}
+.content_zan{    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #FFF;
+    border-bottom: 0.8px solid #ECECEC;}
+.content_zan .likea{width: 20%;margin: 25px auto; display: block;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+text-align: center;}
+.content_zan img{width: 46px;  display: block;margin: 0px auto;}
+.content_zan p{text-align: center; font-size: 14px;color: #B4B4B4; margin-top: 2px;}
+.ground{width: 100%;overflow: hidden;}
+.discuss_type{display: inline-block; font-size: 13px;margin-left: 11px;padding: 13px 0px 10px 0px;border-bottom: 1px solid #78BD50;color: #333;  z-index: 99999;position: relative;}
+.discuss_ul{margin: 0;overflow: hidden; float: right;    width: 100%;}
+.discuss_ul li:nth-last-child(1){border-bottom: 0.8px solid #ECECEC;margin-bottom: 6px;}
+.discuss_ul li{margin-left:11px ;border-top: 0.8px solid #ECECEC; padding: 15px 0px 11px 0px;}
+.discuss_ulA{margin: 0;overflow: hidden; float: right;width: 100%;}
+.discuss_ulA li:nth-last-child(1){border-bottom: 0.8px solid #ECECEC;margin-bottom: 6px;}
+.discuss_ulA li{margin-left:11px ;border-top: 0.8px solid #ECECEC; padding: 15px 0px 11px 0px;}
+.discuss_box{width: 100%;margin: 0;overflow: hidden;}
+.discuss_portrait{width: 30px;height:32px;float: left; border-radius: 100%;}
+.discuss_user{width: 55%; color: #B4B4B4;float: left;margin-top: -3px;}
+.user_name{font-size: 13px; padding-left: 10px;margin: 0;display: block;line-height: 8px;padding-top: 6px;line-height: 12px;color: #7D7D7D!important;display: inline-block;}
+.discuss_span{ display: inline-block;font-size: 11px; padding: 0;}
+.span_date{margin-left: 10px;} .span_from{margin-left: 5px;}
+.discuss_content{display: block; overflow: hidden;font-size: 16px;margin-bottom: 5px; color: #333;padding-left: 40px;padding-right: 10px; word-break:break-all; line-height: 22px;margin-top: 8px;min-width: 79%;}
+.discuss_bottom{float: right; margin-right: 21px;font-size: 13px;color: #B4B4B4;height: 24px;}
+.discuss_bottom img{width: 14px;}
+.ass_zan_png{margin-top: 2px;}
+.praise_reply{float: left;margin-top: 5px;} .pid_praise2{margin-top: 6px!important;}
+.discuss_bottom span{padding-left: 3px; vertical-align: 12%;}
+.discuss_bottom div:nth-last-child(2){margin-right: 20px;}
+.discuss_zan {vertical-align: 8%!important;}
+.post-operation {float:right;height:30px;line-height:14px;padding-top: 7px;}
+.post-floor {color:#b4b4b4;font-size:12px;padding-right:10px;}
+.comment_box{width: 100%;margin: 0;padding: 0;overflow: hidden; margin-bottom: 100px;}
+.comment_ul{width: 100% !important;}
+.comment_ul li{width: 95%!important;margin: 0px auto!important;}
+.name_font{font-size: 16px!important;}
+.user_head{border-bottom: 1px solid #ECECEC;}
+.user_message{width: 95%;overflow: hidden;  margin: 3% auto;}
+.attention{margin: 0; font-size: 12px;padding: 4px 9px 4px 8px;float: right; border-radius: 3px; text-align: center;margin-top: 12px;margin-right: 5px;}
+.attention_y{border: 1px solid #B4B4B4;color: #B4B4B4;}
+.attention_n{border: 1px solid #78BD50;color: #78BD50;}
+.left_px{margin-left: 5px;padding: 0!important;}
+.user_portrait{width: 13%;float: left;}
+.user_content{background-color: #F8F8F8; padding: 10px!important;}
+.award{width: 100%;border-top:0.8px solid #ECECEC;border-bottom: 0.8px solid #ECECEC; margin-top: 5px;background-color: #fff;overflow: hidden;}
+.award_hezi{padding: 8px 0px;margin: 0; overflow: hidden;}
+.award_box{padding: 10px 0px;margin: 0; overflow: hidden;position: relative;}
+.award_font{font-size: 19px; color: #B4B4B4;float: left;padding-left: 11px;padding-bottom: 3px;}
+.award_do{display: block; margin: 0px auto;float: right; padding: 15px 16px;border-left: 1px solid #ECECEC;width: 75px;}
+.award_num{font-size: 11px!important;margin: 0;margin-top: -4px;}
+.award_fontA{font-size: 16px; color: #B4B4B4;float: left;text-align: center;line-height: 52px;padding-left: 11px;}
+.award_font ul{overflow: hidden;padding: 0;margin-bottom: 0px;  float: left;}
+.award_font ul li {float: left; margin-right: 4px;}
+.award_font ul li img{width: 30px;border-radius: 100%;}
+.jt_you{width: 15px; position: absolute; right: 110px;top: 40px;}
+.operate{width: 100%;margin: 0px auto;overflow: hidden;}
+.operate_box{width: 100%;margin: 0px auto;overflow: hidden;border-bottom: 0.8px solid #ECECEC;}
+.operate ul{width: 100%;overflow: hidden;margin: 10px auto;padding: 0;}
+.operate ul li{float: left; width: 20%;}
+.operate p{text-align: center;font-size: 12px;color: #7D7D7D;padding-top: 2px;}
+.operate img{width: 40px;display: block;margin: 0px auto;}
+.discuss_more{width: 15px;float: right; margin-right: 20px;}
+
+.btm_tel{ border-bottom: 1px solid #ECECEC;}
+.vdo_btn{position: absolute;width: 100%;height: 100%; background-color:rgba(0,0,0,0.3); top: 0;left: 0;}
+.vdo_btn img{width: 13%;margin-left: 129px;margin-top: 21%;}
+
+
+
+/*3.0.2新增样式*/
+.admin_name_type{display: inline-block;font-size: 9px;color: #FFF;padding: 2px 5px 0px 5px;border-radius: 3px;margin-left: 3px;vertical-align: middle;margin-top: -2px;}
+
+.admin_gl_m{background-color: #7FC0F8;}
+.admin_gl_w{background-color: #F87F7F;}
+.admin_gl_n{background-color: #BBBBBB}
+
+
+
+.user_name_type{display: inline-block;height: 13px;border-radius: 3px;vertical-align: middle;margin-left: 3px;margin-top: 0px;margin-top: -2px;}
+.user_name_type_left{display: inline-block; position: relative; height: 13px; float: left;}
+.user_name_type_left span{color: #FFF;font-size: 7px;position: absolute;top: 2px;left: 9px;width: 8px;text-align: center;font-weight: bold;}
+
+.user_name_type_left img{width: 13px;padding-right: 6px; float: left;}
+.user_name_type_right{display: inline-block;font-size: 9px;float: right;padding: 2px 3px 0px 3px;line-height: 11px;}
+/*男*/
+.user_gl_m{border: 1px solid #7FC0F8;}
+.user_gl_m .user_name_type_left{background-color: #7FC0F8;}
+.user_gl_m .user_name_type_right{color: #7FC0F8;}
+/*女*/
+.user_gl_w{border: 1px solid #F87F7F;}
+.user_gl_w .user_name_type_left{background-color: #F87F7F;}
+.user_gl_w .user_name_type_right{color: #F87F7F;}
+/*保密*/
+.user_gl_n{border: 1px solid #BBBBBB;}
+.user_gl_n .user_name_type_left{background-color: #BBBBBB;}
+.user_gl_n .user_name_type_right{color: #BBBBBB;}
+
+
+.gather_advertisement{margin-top: 5px; padding: 20px 2%;background-color: #FFF;}
+.gather_advertisement p{font-size: 18px;color: #333;line-height: 25px;margin: 5px 0px;}
+.gather_advertisement img{width: 100%;margin: 5px 0px;}
+
+.dis_edit_time{font-size: 12px;text-align: center;color: #ADADAD;background-color: #FFF;padding: 10px 11px;}
+.dis_edit_time p{background-color: #F1F1F1;padding: 3px 0px;}
